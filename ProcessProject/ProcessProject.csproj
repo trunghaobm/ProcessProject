@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="DB_Access\LoginAccess.cs" />
     <Compile Include="DB_Access\StringSource.cs" />
+    <Compile Include="DB_Access\StudenAccess.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,19 +71,64 @@
       <DependentUpon>myDB.dbml</DependentUpon>
     </Compile>
     <Compile Include="OtherClass\AllUser.cs" />
+    <Compile Include="OtherForm\AddStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\AddStudent.Designer.cs">
+      <DependentUpon>AddStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\EditStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\EditStudent.Designer.cs">
+      <DependentUpon>EditStudent.cs</DependentUpon>
+    </Compile>
     <Compile Include="OtherForm\Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="OtherForm\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="OtherForm\ShowStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\ShowStudent.Designer.cs">
+      <DependentUpon>ShowStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\Student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\Student.Designer.cs">
+      <DependentUpon>Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\StudentDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\StudentDetails.Designer.cs">
+      <DependentUpon>StudentDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\AddStudent.resx">
+      <DependentUpon>AddStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\EditStudent.resx">
+      <DependentUpon>EditStudent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="OtherForm\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\ShowStudent.resx">
+      <DependentUpon>ShowStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\Student.resx">
+      <DependentUpon>Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\StudentDetails.resx">
+      <DependentUpon>StudentDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

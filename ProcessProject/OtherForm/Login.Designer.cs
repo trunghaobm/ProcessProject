@@ -81,9 +81,11 @@ namespace ProcessProject.OtherForm
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(363, 38);
             this.txtPassword.TabIndex = 4;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // btnLogin
             // 
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.Location = new System.Drawing.Point(11, 305);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(138, 68);
@@ -94,6 +96,7 @@ namespace ProcessProject.OtherForm
             // 
             // btnRegister
             // 
+            this.btnRegister.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegister.Location = new System.Drawing.Point(222, 305);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(138, 68);
@@ -118,6 +121,7 @@ namespace ProcessProject.OtherForm
             // ckboxRemember
             // 
             this.ckboxRemember.AutoSize = true;
+            this.ckboxRemember.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ckboxRemember.Enabled = false;
             this.ckboxRemember.Location = new System.Drawing.Point(11, 242);
             this.ckboxRemember.Name = "ckboxRemember";

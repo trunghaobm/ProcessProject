@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Linq;
+using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,7 +13,7 @@ namespace ProcessProject.OtherClass
     class AllUser
     {
 
-        public static void OpoenChildForm(Form childform, Panel childform_pnl)
+        public static void OpenChildForm(Form childform, Panel childform_pnl)
         {
             childform.TopLevel = false;
             childform.FormBorderStyle = FormBorderStyle.None;
@@ -19,6 +22,33 @@ namespace ProcessProject.OtherClass
             childform_pnl.Tag = childform;
             childform.BringToFront();
             childform.Show();
+        }
+
+        public static byte[] ImageToBinary(Image source)
+        {
+            MemoryStream ms = new MemoryStream();
+            source.Save(ms, System.Drawing.Imaging.ImageFormat.Gif);
+            return ms.ToArray();
+        }
+
+        public static Image BinaryToImage(byte[] source)
+        {
+            try
+            {
+                MemoryStream ms = new MemoryStream(source, 0, source.Length);
+                ms.Write(source, 0, source.Length);
+                return Image.FromStream(ms, true);//Exception occurs here
+            }
+            catch { }
+            return null;
+        }
+
+        public static void PanitEvent(PaintEventArgs e, string text, string font, int size, Brush brush, Point point)
+        {
+            using (Font myFont = new Font(font, size))
+            {
+                e.Graphics.DrawString(text, myFont, brush, point);
+            }
         }
     }
 }

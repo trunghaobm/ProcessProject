@@ -14,3 +14,8 @@ D:\DEV\20202021-HK2\Lập trình Window\ProcessProject\ProcessProject\bin\Debug\
 D:\DEV\20202021-HK2\Lập trình Window\ProcessProject\ProcessProject\bin\Debug\EntityFramework.xml
 D:\DEV\20202021-HK2\Lập trình Window\ProcessProject\ProcessProject\bin\Debug\EntityFramework.SqlServer.xml
 D:\DEV\20202021-HK2\Lập trình Window\ProcessProject\ProcessProject\obj\Debug\ProcessProject.csproj.CopyComplete
+D:\DEV\20202021-HK2\Lập trình Window\ProcessProject\ProcessProject\obj\Debug\ProcessProject.OtherForm.AddStudent.resources
+D:\DEV\20202021-HK2\Lập trình Window\ProcessProject\ProcessProject\obj\Debug\ProcessProject.OtherForm.ShowStudent.resources
+D:\DEV\20202021-HK2\Lập trình Window\ProcessProject\ProcessProject\obj\Debug\ProcessProject.OtherForm.Student.resources
+D:\DEV\20202021-HK2\Lập trình Window\ProcessProject\ProcessProject\obj\Debug\ProcessProject.OtherForm.StudentDetails.resources
+D:\DEV\20202021-HK2\Lập trình Window\ProcessProject\ProcessProject\obj\Debug\ProcessProject.OtherForm.EditStudent.resources

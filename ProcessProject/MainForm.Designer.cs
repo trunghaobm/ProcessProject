@@ -53,6 +53,7 @@ namespace ProcessProject
             // picLoginClick
             // 
             this.picLoginClick.BackColor = System.Drawing.Color.Gray;
+            this.picLoginClick.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picLoginClick.Location = new System.Drawing.Point(0, 150);
             this.picLoginClick.Name = "picLoginClick";
             this.picLoginClick.Size = new System.Drawing.Size(200, 50);
@@ -63,6 +64,7 @@ namespace ProcessProject
             // 
             // picStudentClick
             // 
+            this.picStudentClick.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picStudentClick.Location = new System.Drawing.Point(0, 200);
             this.picStudentClick.Name = "picStudentClick";
             this.picStudentClick.Size = new System.Drawing.Size(200, 50);
@@ -81,7 +83,6 @@ namespace ProcessProject
             // 
             // tmLog
             // 
-            this.tmLog.Enabled = true;
             this.tmLog.Tick += new System.EventHandler(this.tmLog_Tick);
             // 
             // MainForm

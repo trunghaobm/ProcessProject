@@ -240,7 +240,7 @@ namespace ProcessProject
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_C02_firtsname", DbType="NChar(100) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_C02_firtsname", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
 		public string C02_firtsname
 		{
 			get
@@ -260,7 +260,7 @@ namespace ProcessProject
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_C03_lastname", DbType="NChar(100)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_C03_lastname", DbType="NVarChar(100)")]
 		public string C03_lastname
 		{
 			get
@@ -320,7 +320,7 @@ namespace ProcessProject
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_C06_phonenumber", DbType="NChar(10)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_C06_phonenumber", DbType="NVarChar(50)")]
 		public string C06_phonenumber
 		{
 			get
@@ -340,7 +340,7 @@ namespace ProcessProject
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_C07_address", DbType="NChar(200)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_C07_address", DbType="NVarChar(200)")]
 		public string C07_address
 		{
 			get

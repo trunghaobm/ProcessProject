@@ -16,7 +16,6 @@ namespace ProcessProject
 {
     public partial class MainForm : Form
     {
-
         public MainForm()
         {
             InitializeComponent();
@@ -45,21 +44,30 @@ namespace ProcessProject
 
         private void picLoginClick_Click(object sender, EventArgs e)
         {
-            picLoginClick.BackColor = Color.LightGray;
+
+            if (picLoginClick.BackColor == Color.Gray)
+            {
+                picLoginClick.BackColor = Color.LightGray;
 
 
-            picStudentClick.BackColor = Color.Gray;
-            LoginForm login = new LoginForm();
-            AllUser.OpoenChildForm(login, panelFormControl);
+                picStudentClick.BackColor = Color.Gray;
+                panelFormControl.Controls.Clear();
+                LoginForm login = new LoginForm();
+                AllUser.OpenChildForm(login, panelFormControl);
+            }
         }
 
         private void picStudentClick_Click(object sender, EventArgs e)
         {
-            picStudentClick.BackColor = Color.LightGray;
+            if (picStudentClick.BackColor == Color.Gray)
+            {
+                picStudentClick.BackColor = Color.LightGray;
 
-            picLoginClick.BackColor = Color.Gray;
-
-            panelFormControl.Controls.Clear();
+                picLoginClick.BackColor = Color.Gray;
+                panelFormControl.Controls.Clear();
+                Student std = new Student();
+                AllUser.OpenChildForm(std, panelFormControl);
+            }
         }
 
         private void tmLog_Tick(object sender, EventArgs e)
